@@ -1,1 +1,5 @@
-adb shell pm uninstall -k --user 0 com.google.android.googlequicksearchbox && adb shell pm uninstall -k --user 0 com.android.vending && adb shell pm uninstall -k --user 0 com.google.android.gms && adb shell pm uninstall -k --user 0 com.google.android.apps.photos && adb shell pm uninstall -k --user 0 com.google.android.calendar && adb shell pm uninstall -k --user 0 com.google.android.gm && adb shell pm uninstall -k --user 0 com.google.android.apps.maps && adb shell pm uninstall -k --user 0 com.google.android.videos && adb shell pm uninstall -k --user 0 com.google.android.youtube
+adb shell pm uninstall -k --user 0 com.google.android.googlequicksearchbox && adb shell pm uninstall -k --user 0 com.google.android.apps.photos && adb shell pm uninstall -k --user 0 com.google.android.calendar && adb shell pm uninstall -k --user 0 com.google.android.gm && adb shell pm uninstall -k --user 0 com.google.android.apps.maps && adb shell pm uninstall -k --user 0 com.google.android.videos && adb shell pm uninstall -k --user 0 com.google.android.youtube
+
+//gms
+adb shell pm uninstall -k --user 0 com.android.vending
+adb shell pm uninstall -k --user 0 com.google.android.gms
