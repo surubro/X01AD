@@ -16,3 +16,8 @@ install
 adb -s emulator-5554 shell cmd package install-existing
 adb shell cmd package install-existing com.google.android.gms
 
+//google gms
+
+//gms
+adb shell pm uninstall -k --user 0 com.android.vending
+adb shell pm uninstall -k --user 0 com.google.android.gms
