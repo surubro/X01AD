@@ -10,20 +10,20 @@ echo Starting uninstall process...
 echo.
 
 REM Facebook & related apps
-adb shell pm uninstall -k --user 0 com.facebook.katana
+adb shell pm uninstall -k --user 0 com.facebook.katana 
 adb shell pm uninstall -k --user 0 com.facebook.system
 adb shell pm uninstall -k --user 0 com.facebook.appmanager
 adb shell pm uninstall -k --user 0 com.instagram.android
 adb shell pm uninstall -k --user 0 com.facebook.orca
 adb shell pm uninstall -k --user 0 com.facebook.services
 
+
 REM Asus
 adb shell pm uninstall -k --user 0 com.asus.dm
+adb shell pm uninstall -k --user 0 com.asus.loguploader
+adb shell pm uninstall -k --user 0 com.asus.loguploaderproxy
 
 REM Google apps
-adb shell pm uninstall -k --user 0 com.google.android.music
-adb shell pm uninstall -k --user 0 com.google.android.apps.tachyon
-adb shell pm uninstall -k --user 0 com.google.android.apps.wellbeing
 adb shell pm uninstall -k --user 0 com.google.android.googlequicksearchbox
 adb shell pm uninstall -k --user 0 com.google.android.apps.photos
 adb shell pm uninstall -k --user 0 com.google.android.calendar
@@ -32,6 +32,10 @@ adb shell pm uninstall -k --user 0 com.google.android.apps.maps
 adb shell pm uninstall -k --user 0 com.google.android.videos
 adb shell pm uninstall -k --user 0 com.google.android.youtube
 adb shell pm uninstall -k --user 0 com.google.android.apps.docs
+adb shell pm uninstall -k --user 0 com.google.android.music
+adb shell pm uninstall -k --user 0 com.google.android.apps.tachyon
+adb shell pm uninstall -k --user 0 com.google.android.apps.wellbeing
+
 
 echo.
 set /p playstore_choice=Do you want to uninstall the Play Store? (y/n): 
