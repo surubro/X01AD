@@ -5,12 +5,6 @@ adb shell pm uninstall -k --user 0 com.instagram.android
 adb shell pm uninstall -k --user 0 com.facebook.orca
 adb shell pm uninstall -k --user 0 com.asus.dm
 adb shell pm uninstall -k --user 0 com.facebook.services
-adb shell pm uninstall -k --user 0 com.google.android.music
-adb shell pm uninstall -k --user 0 com.google.android.apps.tachyon
-adb shell pm uninstall -k --user 0 com.google.android.apps.wellbeing
-adb shell pm uninstall -k --user 0 com.android.vending
-adb shell pm uninstall -k --user 0 com.google.android.gms
-adb shell pm uninstall -k --user 0 com.google.android.apps.docs
 adb shell pm uninstall -k --user 0 com.asus.loguploader
 adb shell pm uninstall -k --user 0 com.asus.loguploaderproxy
 
@@ -22,8 +16,6 @@ adb shell cmd package install-existing com.google.android.gms
 // google
 
 adb shell pm uninstall -k --user 0 com.google.android.googlequicksearchbox
-adb shell pm uninstall -k --user 0 com.android.vending
-adb shell pm uninstall -k --user 0 com.google.android.gms
 adb shell pm uninstall -k --user 0 com.google.android.apps.photos
 adb shell pm uninstall -k --user 0 com.google.android.calendar
 adb shell pm uninstall -k --user 0 com.google.android.gm
@@ -31,6 +23,9 @@ adb shell pm uninstall -k --user 0 com.google.android.apps.maps
 adb shell pm uninstall -k --user 0 com.google.android.videos
 adb shell pm uninstall -k --user 0 com.google.android.youtube
 adb shell pm uninstall -k --user 0 com.google.android.apps.docs
+adb shell pm uninstall -k --user 0 com.google.android.music
+adb shell pm uninstall -k --user 0 com.google.android.apps.tachyon
+adb shell pm uninstall -k --user 0 com.google.android.apps.wellbeing
 
 //google gms
 
