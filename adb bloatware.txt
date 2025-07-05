@@ -14,7 +14,7 @@ adb shell pm uninstall -k --user 0 com.google.android.apps.docs
 adb shell pm uninstall -k --user 0 com.asus.loguploader
 adb shell pm uninstall -k --user 0 com.asus.loguploaderproxy
 
-install
+Re-install cmd
 
 adb -s emulator-5554 shell cmd package install-existing
 adb shell cmd package install-existing com.google.android.gms
