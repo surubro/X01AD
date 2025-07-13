@@ -1,3 +1,4 @@
+// open app using adb
 adb shell monkey -p com.android.vending -c android.intent.category.LAUNCHER 1
 
 
