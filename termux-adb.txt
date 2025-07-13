@@ -1,0 +1,183 @@
+adb shell monkey -p com.android.vending -c android.intent.category.LAUNCHER 1
+
+
+ftp://192.168.1.130:1573
+
+
+Pkages 
+
+pkg install cowsay && pkg install figlet && pkg install fortune
+
+termux-wifi-enable false 
+
+pkg update && pkg upgrade -y
+pkg install openssh
+passwd
+new password
+re type password 
+
+Ip address
+Port 8022
+
+mkdir ~/.termux/boot/
+
+ cd ~/.termux/boot && nano start-sshd
+
+
+
+touch ( to create file)
+
+
+then edit file 3 lines required 
+
+#!/data/data/com.termux/files/usr/bin/sh
+termux-wake-lock
+sshd
+
+TERMUX BOOT
+https://wiki.termux.com/wiki/Termux:Boot
+
+SSH SERVER
+https://wiki.termux.com/wiki/Remote_Access
+
+
+
+pkg install android-tools
+ADB pair 192.168.1.2:port code
+adb connect 192.168.1.2:port
+
+
+adb connect localhost
+
+adb -s emulator-5554 shell pm list packages
+
+adb -s emulator-5554 shell pm list packages | grep netflix
+
+termux-wifi-enable false
+
+Power off
+
+adb -s emulator-5554 shell reboot -p
+ 
+
+Upgrade 
+
+adb shell pm uninstall -k --user 0 com.vstv.upgradecenter
+
+
+Lancher Uninstall 
+
+adb -s emulator-5554 shell pm uninstall -k --user 0 me.efesser.flauncher && adb -s emulator-5554 shell pm uninstall -k --user 0 com.zeasn.videoscap
+
+adb -s emulator-5554 shell pm uninstall -k --user 0 com.notriddle.null_launcer
+
+Lancher existing pkg
+
+adb -s emulator-5554 shell cmd package install-existing me.efesser.flauncher && adb -s emulator-5554 shell cmd package install-existing com.zeasn.videoscap
+
+
+Play store & wether & Remote service TV store
+
+
+adb -s emulator-5554 shell pm uninstall -k --user 0 cn.zeasn.tv.vstoresubclient.mtk368.videoscape && adb -s emulator-5554 shell pm uninstall -k --user 0 com.android.vending && adb -s emulator-5554 shell pm uninstall -k --user 0 com.zeasn.services.general && adb -s emulator-5554 shell pm uninstall -k --user 0 com.google.android.tv.remote.service
+
+TV termux-adb 
+
+termux-adb -s emulator-5554 shell pm uninstall -k --user 0 cn.zeasn.tv.vstoresubclient.mtk368.videoscape && termux-adb -s emulator-5554 shell pm uninstall -k --user 0 com.android.vending && termux-adb -s emulator-5554 shell pm uninstall -k --user 0 com.zeasn.services.general && termux-adb -s emulator-5554 shell pm uninstall -k --user 0 com.google.android.tv.remote.service
+
+adb only
+
+adb shell pm uninstall -k --user 0 cn.zeasn.tv.vstoresubclient.mtk368.videoscape && adb shell pm uninstall -k --user 0 com.android.vending && adb shell pm uninstall -k --user 0 com.zeasn.services.general && adb shell pm uninstall -k --user 0 com.google.android.tv.remote.service
+
+
+
+Netflix
+
+adb shell pm uninstall -k --user 0 com.netflix.mediaclient
+
+
+
+
+
+Properitory Settings 
+
+Add this line before executing cmd if you got following error:       adb: more than one device/emulator
+
+ -s emulator-5554 TV Settings app
+
+adb -s emulator-5554 shell pm uninstall -k --user 0 com.vstv.septembersettings
+
+M2 apps removal
+
+adb shell pm uninstall -k --user 0 com.facebook.katana && adb shell pm uninstall -k --user 0 com.facebook.system && adb shell pm uninstall -k --user 0 com.facebook.appmanager && adb shell pm uninstall -k --user 0 com.instagram.android && adb shell pm uninstall -k --user 0 com.facebook.orca && adb shell pm uninstall -k --user 0 com.asus.dm && adb shell pm uninstall -k --user 0 com.facebook.services && adb shell pm uninstall -k --user 0 com.google.android.music && adb shell pm uninstall -k --user 0 com.google.android.apps.tachyon && adb shell pm uninstall -k --user 0 com.google.android.apps.tachyon && com.google.android.apps.wellbeing
+
+Termux-adb
+
+
+termux-adb shell pm uninstall -k --user 0 com.facebook.katana && termux-adb shell pm uninstall -k --user 0 com.facebook.system && termux-adb shell pm uninstall -k --user 0 com.facebook.appmanager && termux-adb shell pm uninstall -k --user 0 com.instagram.android && termux-adb shell pm uninstall -k --user 0 com.facebook.orca && termux-adb shell pm uninstall -k --user 0 com.asus.dm && termux-adb shell pm uninstall -k --user 0 com.facebook.services && termux-adb shell pm uninstall -k --user 0 com.google.android.music && termux-adb shell pm uninstall -k --user 0 com.google.android.apps.tachyon && termux-adb shell pm uninstall -k --user 0 com.google.android.apps.tachyon com.google.android.apps.wellbeing
+
+
+
+
+Smartube
+
+adb -s emulator-5554 shell pm uninstall -k --user 0 com.teamsmart.videomanager.tv
+
+Jio cenema 
+
+adb -s emulator-5554 shell pm uninstall -k --user 0 com.jio.media.stb.ondemand
+
+
+
+Install exciting pkg
+
+adb -s emulator-5554 shell cmd package install-existing
+
+adb shell cmd package install-existing com.google.android.gms
+
+
+
+adb -s 192.168.214.31:35237 shell cmd package install-existing com.vivo.gallery
+
+Know uninstall apps
+
+adb -s emulator-5554 shell pm list packages -u
+
+Using diff
+
+adb -s 192.168.0.100:5555 shell pm list packages > installed_packages.txt 
+
+adb -s 192.168.0.100:5555 shell pm list packages -u > all_packages.txt
+
+diff all_packages.txt installed_packages.txt
+
+com.google.android.gms
+
+adb -s emulator-5554 shell cmd package install-existing com.android.vending && adb -s emulator-5554 shell cmd package install-existing com.vstv.septembersettings && 
+adb -s emulator-5554 shell cmd package install-existing com.vstv.upgradecenter
+
+Desable notification 
+
+adb -s emulator-5554 shell settings put global heads_up_notifications_enabled 0
+
+
+Enable notification 
+
+
+adb -s emulator-5554 shell settings put global heads_up_notifications_enabled 1
+
+boot script location 
+
+
+
+cd ~/.termux/boot
+
+nano adb_reboot_script.sh
+
+nano ~/.termux/boot/adb_reboot_script.sh
+
+com.vstv.septembersettings
+
+Factory reset 
+
+adb -s emulator-5554 shell reboot recovery
