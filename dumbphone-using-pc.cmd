@@ -1,3 +1,4 @@
+adb shell pm uninstall -k --user 0 com.android.chrome
 adb shell pm uninstall -k --user 0 com.facebook.katana
 adb shell pm uninstall -k --user 0 com.facebook.system
 adb shell pm uninstall -k --user 0 com.facebook.appmanager
