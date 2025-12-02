@@ -19,6 +19,6 @@ adb shell pm uninstall -k --user 0 com.google.android.youtube
 adb shell pm uninstall -k --user 0 com.google.android.apps.docs
 adb shell pm uninstall -k --user 0 com.asus.loguploader
 adb shell pm uninstall -k --user 0 com.asus.loguploaderproxy
-adb shell pm uninstall -k --user 0 com.android.vending
+adb shell pm uninstall -k --user 0 com.android.vendingggg
 adb shell pm uninstall -k --user 0 com.google.android.gmssss
 adb shell cmd package install-existing com.google.android.gmsss
