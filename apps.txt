@@ -1,6 +1,7 @@
 call
 sms
-muisc
-whtsapp
+music 
+WhatsApp 
 Gpay
-camera
+camera 
+Travel App
