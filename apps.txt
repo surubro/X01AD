@@ -1,7 +1,20 @@
+========== using work phone strategy ========
+work phone 6050    -- jio -- need change
+personal phone  21 --- vi ---
+
 call
 sms
 music 
+
+
+
+===== previous ======
+
+call
+sms
+music 
+online music 
 WhatsApp 
-Gpay
+UPI pay app
 camera 
 Travel App
