@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cinematic Seal Intro</title>
+
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        background: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        perspective: 1000px;
+        cursor: pointer;
+    }
+
+    .logo-wrapper {
+        opacity: 0;
+        animation: fadeZoom 2.5s ease-out forwards;
+    }
+
+    .logo {
+        width: 260px;
+        animation: rotate3D 12s linear infinite;
+    }
+
+    @keyframes rotate3D {
+        0%   { transform: rotateY(0deg); }
+        100% { transform: rotateY(360deg); }
+    }
+
+    @keyframes fadeZoom {
+        0% {
+            transform: scale(0.7);
+            opacity: 0;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    .hint {
+        position: absolute;
+        bottom: 20px;
+        color: rgba(255,255,255,0.4);
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="logo-wrapper">
+    <img src="resident-evil.jpg" alt="Seal Logo" class="logo">
+</div>
+
+
+<script>
+    document.addEventListener("keydown", function(event) {
+
+        if (event.key === "f" || event.key === "F") {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen();
+            }
+        }
+
+        if (event.key === "Escape") {
+            if (document.fullscreenElement) {
+                document.exitFullscreen();
+            }
+        }
+
+    });
+</script>
+
+</body>
+</html>
