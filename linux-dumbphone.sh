@@ -22,4 +22,6 @@
 ./adb shell pm uninstall -k --user 0 com.android.vendingggg
 ./adb shell pm uninstall -k --user 0 com.google.android.gmssss
 ./adb shell cmd package install-existing com.google.android.gmsss
+
+chmod +x linux-dumbphone.sh
 pause
