@@ -1,0 +1,15 @@
+call 
+sms
+alarm
+calculator
+calender
+camera
+chess
+e-reader
+maps
+meditation
+music
+
+--------- additional needs-------------------
+whtsapp
+music streming
