@@ -1,4 +1,3 @@
-./adb shell pm uninstall -k --user 0 com.android.chrome
 ./adb shell pm uninstall -k --user 0 com.facebook.katana
 ./adb shell pm uninstall -k --user 0 com.facebook.system
 ./adb shell pm uninstall -k --user 0 com.facebook.appmanager
@@ -13,7 +12,6 @@
 ./adb shell pm uninstall -k --user 0 com.google.android.apps.photos 
 ./adb shell pm uninstall -k --user 0 com.google.android.calendar
 ./adb shell pm uninstall -k --user 0 com.google.android.gm
-./adb shell pm uninstall -k --user 0 com.google.android.apps.maps 
 ./adb shell pm uninstall -k --user 0 com.google.android.videos
 ./adb shell pm uninstall -k --user 0 com.google.android.youtube
 ./adb shell pm uninstall -k --user 0 com.google.android.apps.docs
