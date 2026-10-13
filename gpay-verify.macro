@@ -1,0 +1,82 @@
+{
+  "macro": {
+    "disabledTimestamp": 0,
+    "exportedActionBlocks": [],
+    "forceEvenIfNotEnabledTimestamp": 0,
+    "isActionBlock": false,
+    "isBeingImported": false,
+    "isClonedInstance": false,
+    "isExtra": false,
+    "isFavourite": false,
+    "isNew": false,
+    "lastEditedTimestamp": 1736868556248,
+    "localVariables": [
+      {
+        "dictionary": {
+          "entries": [],
+          "isArray": false,
+          "variableType": 4,
+          "type": "Dictionary"
+        },
+        "isActionBlockWorkingVar": false,
+        "isLocalVar": true,
+        "isSecure": false,
+        "m_booleanValue": true,
+        "m_decimalValue": 0.0,
+        "m_intValue": 0,
+        "m_name": "Void",
+        "m_stringValue": "",
+        "m_type": 0,
+        "supportsInput": false,
+        "supportsOutput": true
+      }
+    ],
+    "localVarsAlphabetical": true,
+    "m_GUID": -8754689397954851294,
+    "m_actionList": [
+      {
+        "dictionaryKeys": {
+          "keys": []
+        },
+        "option": 0,
+        "preventPasswordPin": false,
+        "subtitle": "Use your fingerprint to continue",
+        "title": "Verify it's you",
+        "variableName": "Void",
+        "m_SIGUID": -7856775812607257988,
+        "m_classType": "AuthenticateUserAction",
+        "m_constraintList": [],
+        "m_isDisabled": false,
+        "m_isOrCondition": false
+      }
+    ],
+    "m_category": "Always on",
+    "m_constraintList": [],
+    "m_description": "",
+    "m_descriptionOpen": false,
+    "m_enabled": true,
+    "m_excludeLog": false,
+    "m_headingColor": 0,
+    "m_isOrCondition": false,
+    "m_name": "Wallet unlocker",
+    "m_triggerList": [
+      {
+        "isAllApps": false,
+        "m_applicationNameList": [
+          "Google Pay"
+        ],
+        "m_launched": true,
+        "m_packageNameList": [
+          "com.google.android.apps.nbu.paisa.user"
+        ],
+        "usePackageNameOption": 0,
+        "m_SIGUID": -7231958771094449541,
+        "m_classType": "ApplicationLaunchedTrigger",
+        "m_constraintList": [],
+        "m_isDisabled": false,
+        "m_isOrCondition": false
+      }
+    ]
+  },
+  "macroExportVersion": 1
+}
