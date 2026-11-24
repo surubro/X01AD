@@ -1,13 +1,12 @@
-
 @echo off
-title Motorola Google Debloater
+title Motorola - Google Debloater
 color 0A
 
 echo ==========================================
-echo       MOTOROLA GOOGLE DEBLOATER
+echo       GOOGLE APP DEBLOATER
 echo ==========================================
 echo.
-echo KEEPING:
+echo PRESERVED:
 echo - Google Play Store
 echo - Google Play Services
 echo - Google Services Framework
@@ -16,34 +15,59 @@ echo - Contacts
 echo - Google Maps
 echo - Google Drive
 echo - Google Pay India
-echo - NFC Services
+echo - Android NFC and payment services
 echo.
-echo Make sure USB debugging is enabled.
+echo Removing optional Google applications...
 echo.
 pause
 
-echo.
-echo Removing unwanted Google apps...
-echo.
-
+:: GOOGLE SEARCH AND ASSISTANT
 adb shell pm uninstall -k --user 0 com.google.android.googlequicksearchbox
+adb shell pm uninstall -k --user 0 com.google.android.apps.googleassistant
+
+:: GOOGLE MEDIA
 adb shell pm uninstall -k --user 0 com.google.android.youtube
 adb shell pm uninstall -k --user 0 com.google.android.apps.youtube.music
-adb shell pm uninstall -k --user 0 com.google.android.gm
 adb shell pm uninstall -k --user 0 com.google.android.apps.photos
-adb shell pm uninstall -k --user 0 com.google.android.keep
-adb shell pm uninstall -k --user 0 com.google.android.calendar
-adb shell pm uninstall -k --user 0 com.google.android.apps.tachyon
-adb shell pm uninstall -k --user 0 com.google.android.play.games
 adb shell pm uninstall -k --user 0 com.google.android.videos
 adb shell pm uninstall -k --user 0 com.google.android.apps.books
 adb shell pm uninstall -k --user 0 com.google.android.apps.magazines
-adb shell pm uninstall -k --user 0 com.google.android.apps.translate
+
+:: GOOGLE PRODUCTIVITY
+adb shell pm uninstall -k --user 0 com.google.android.gm
+adb shell pm uninstall -k --user 0 com.google.android.keep
+adb shell pm uninstall -k --user 0 com.google.android.calendar
+adb shell pm uninstall -k --user 0 com.google.android.apps.tasks
+adb shell pm uninstall -k --user 0 com.google.android.apps.docs.editors.docs
+adb shell pm uninstall -k --user 0 com.google.android.apps.docs.editors.sheets
+adb shell pm uninstall -k --user 0 com.google.android.apps.docs.editors.slides
+
+:: GOOGLE FITNESS AND HEALTH
+adb shell pm uninstall -k --user 0 com.google.android.apps.fitness
+
+:: GOOGLE FIND HUB / FIND MY DEVICE
+adb shell pm uninstall -k --user 0 com.google.android.apps.adm
+
+:: GOOGLE HOME AND SMART DEVICES
 adb shell pm uninstall -k --user 0 com.google.android.apps.chromecast.app
-adb shell pm uninstall -k --user 0 com.google.android.apps.googleassistant
-adb shell pm uninstall -k --user 0 com.google.android.apps.turbo
+adb shell pm uninstall -k --user 0 com.google.android.apps.chromecast.home
+
+:: GOOGLE COMMUNICATION
+adb shell pm uninstall -k --user 0 com.google.android.apps.tachyon
+adb shell pm uninstall -k --user 0 com.google.android.apps.meetings
+
+:: GOOGLE ENTERTAINMENT AND GAMING
+adb shell pm uninstall -k --user 0 com.google.android.play.games
+
+:: GOOGLE TRANSLATION
+adb shell pm uninstall -k --user 0 com.google.android.apps.translate
+
+:: GOOGLE SUBSCRIPTIONS AND BACKUP
 adb shell pm uninstall -k --user 0 com.google.android.apps.subscriptions.red
 adb shell pm uninstall -k --user 0 com.google.android.apps.restore
+
+:: OTHER OPTIONAL GOOGLE APPS
+adb shell pm uninstall -k --user 0 com.google.android.apps.turbo
 
 echo.
 echo ==========================================
