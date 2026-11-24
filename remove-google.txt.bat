@@ -57,13 +57,11 @@ adb shell pm uninstall -k --user 0 com.google.android.apps.tachyon
 adb shell pm uninstall -k --user 0 com.google.android.apps.meetings
 
 :: GOOGLE ENTERTAINMENT AND GAMING
-adb shell pm uninstall -k --user 0 com.google.android.play.games
 
 :: GOOGLE TRANSLATION
 adb shell pm uninstall -k --user 0 com.google.android.apps.translate
 
 :: GOOGLE SUBSCRIPTIONS AND BACKUP
-adb shell pm uninstall -k --user 0 com.google.android.apps.subscriptions.red
 adb shell pm uninstall -k --user 0 com.google.android.apps.restore
 
 :: OTHER OPTIONAL GOOGLE APPS
