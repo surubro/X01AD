@@ -1,0 +1,35 @@
+adb shell pm uninstall -k --user 0 com.google.android.adservices.api
+adb shell pm uninstall -k --user 0 com.motorola.dynamicvolume
+adb shell pm uninstall -k --user 0 com.google.android.as
+adb shell pm uninstall -k --user 0 com.motorola.brapps
+adb shell pm uninstall -k --user 0 com.google.android.apps.googleassistant
+adb shell pm uninstall -k --user 0 com.motorola.genie
+adb shell pm uninstall -k --user 0 com.lenovo.lsf.user
+adb shell pm uninstall -k --user 0 com.facebook.system
+adb shell pm uninstall -k --user 0 com.facebook.appmanager
+adb shell pm uninstall -k --user 0 com.facebook.services
+adb shell pm uninstall -k --user 0 com.inmobi.installer
+adb shell pm uninstall -k --user 0 com.aura.oobe.motorola
+adb shell pm uninstall -k --user 0 com.motorola.bach.modemstats
+adb shell pm uninstall -k --user 0 com.motorola.aiservices
+adb shell pm uninstall -k --user 0 com.dti.motorola
+adb shell pm uninstall -k --user 0 com.motorola.discovery
+adb shell pm uninstall -k --user 0 com.motorola.help
+adb shell pm uninstall -k --user 0 com.motorola.help.extlog
+adb shell pm uninstall -k --user 0 com.motorola.enterprise.service
+adb shell pm uninstall -k --user 0 com.motorola.mototour
+adb shell pm uninstall -k --user 0 com.motorola.ccc.notification
+adb shell pm uninstall -k --user 0 com.motorola.ccc.mainplm
+adb shell pm uninstall -k --user 0 com.motorola.slpc_sys
+adb shell pm uninstall -k --user 0 com.motorola.omadm.vzw
+adb shell pm uninstall -k --user 0 com.motorola.paks
+adb shell pm uninstall -k --user 0 com.motorola.paks.notification
+adb shell pm uninstall -k --user 0 com.android.theme.icon.pebble
+adb shell pm uninstall -k --user 0 com.motorola.appforecast
+adb shell pm uninstall -k --user 0 com.motorola.revoker.services
+adb shell pm uninstall -k --user 0 com.android.traceur
+adb shell pm uninstall -k --user 0 com.google.android.ondevicepersonalization.services
+adb shell pm uninstall -k --user 0 com.mediatek.apmonitor
+adb shell pm uninstall -k --user 0 com.amazon.appmanager
+
+pause
