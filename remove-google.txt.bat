@@ -16,6 +16,9 @@ echo - Google Maps
 echo - Google Drive
 echo - Google Pay India
 echo - Android NFC and payment services
+echo - Google one
+echo - Google games
+echo - Google tv
 echo.
 echo Removing optional Google applications...
 echo.
